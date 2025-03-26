@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="game">
+        <div class="game__bg-container"></div>
+        <div class="game__content">
+            <h1 class="game__title">Memo Game</h1>
+            
+            <div class="game__controls">
+                <div class="game__settings">
+                    <label for="cardCount">Выберите количество карточек:</label>
+                    <select id="cardCount" class="game__select">
+                        <option value="12">12</option>
+                        <option value="20">20</option>
+                        <option value="32">32</option>
+                        <option value="44">44</option>
+                    </select>
+                    <select id="difficulty" class="game__select">
+                        <option value="easy">Легкий</option>
+                        <option value="medium">Средний</option>
+                        <option value="hard">Сложный</option>
+                    </select>
+                </div>   
+                <button id="startGame" class="game__button">Начать игру</button>
+                <div id="movesCounter">Осталось ходов: -</div>
+            </div>
+
+            <div class="game-container"></div>
+
+            <div id="popup" class="popup">
+                <div class="popup__content">
+                    <p id="popup-message" class="popup__message"></p>
+                    <button id="restartGame">Начать заново</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
