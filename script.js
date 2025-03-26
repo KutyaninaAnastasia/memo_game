@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function setGridColumns(cardCount) {
         const columns = {
+            8: "repeat(2, 120px)",
             12: "repeat(4, 120px)",
             20: "repeat(5, 120px)",
             32: "repeat(8, 120px)",
